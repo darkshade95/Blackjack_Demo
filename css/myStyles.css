@@ -1,0 +1,249 @@
+/* -----------------------------------------
+            MAIN COLOR SCHEMES
+----------------------------------------- */
+
+/*
+
+LIGHT GREEN: rgba(48, 136, 52, 1)
+DARK GREEN: rgba(26, 74, 28, 1)
+BROWN: rgba(133, 96, 66, 1)
+
+*/
+
+/* -----------------------------------------
+    MOBILE DEFAULT STYLES - GLOBAL STYLES
+----------------------------------------- */
+
+/* Prevent adjustments of font size after orientation change in IE on Windows phone and in IOS */
+
+html {
+    font-family: 'Comfortaa', cursive;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    min-height: 100%;
+    border: 20px inset #855E42;
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        border: 10px inset #855E42;
+    }
+}
+
+
+/* Apply a natural box model to all elements */
+
+* {
+    font-family: 'Comfortaa', cursive;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+img,
+video {
+    width: 100%;
+}
+
+body {
+    padding: 0 !important;
+    margin: 0 !important;
+    padding-top: 5% !important;
+    color: rgba(255, 255, 255, 1);
+
+    background: rgba(48, 136, 52, 1);
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(48, 136, 52, 1)), to(rgba(26, 74, 28, 1)));
+    background: linear-gradient(rgba(48, 136, 52, 1), rgba(26, 74, 28, 1));
+    /* Standard syntax */
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+
+
+
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0px auto;
+}
+
+button {
+    background: #ff0000;
+    /*background-image: -webkit-linear-gradient(top, #ff0000, #960000);
+    background-image: -moz-linear-gradient(top, #ff0000, #960000);
+    background-image: -ms-linear-gradient(top, #ff0000, #960000);
+    background-image: -o-linear-gradient(top, #ff0000, #960000);
+    background-image: linear-gradient(to bottom, #ff0000, #960000);*/
+    border-radius: 10px;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
+    padding: 15px;
+    border: solid #000000 1px;
+    text-decoration: none;
+    margin: 10px;
+
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+button:hover {
+    background: #960000;
+    color: rgba(255, 255, 255, 1);
+    /*background-image: -webkit-linear-gradient(top, #960000, #ff0000);
+    background-image: -moz-linear-gradient(top, #960000, #ff0000);
+    background-image: -ms-linear-gradient(top, #960000, #ff0000);
+    background-image: -o-linear-gradient(top, #960000, #ff0000);
+    background-image: linear-gradient(to bottom, #960000, #ff0000);*/
+    text-decoration: none;
+}
+
+
+/* -----------------------------------------
+                  LOCAL STYLES
+----------------------------------------- */
+
+header h1 {
+    font-size: 36px;
+}
+
+#buttonBeginGame {
+    display: none;
+}
+
+
+#gameC {
+    display: none;
+
+}
+
+#gamePilesC {
+    border: 1px solid red;
+    padding: 15px;
+}
+
+
+
+.gameCards {
+    width: 90.4px;
+    height: inherit;
+    padding: inherit;
+    margin: 0 5px;
+}
+
+.cardPlaceholder {
+    /*margin: 77.5px;*/
+    height: 125.6px;
+
+    padding: 5px;
+}
+
+#hitStandC {}
+
+#buttonStand {
+    display: none;
+}
+
+#resultMessageC {
+    display: none;
+}
+
+#betOptions {
+    list-style: none;
+}
+
+#betOptions li input {
+    display: none;
+
+}
+
+#betOptions li label {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 5px auto;
+    text-align: center;
+    border: 2px solid transparent;
+    background-color: #0e3e10;
+    border-radius: 10px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+#betOptions li input:checked + label {
+    border: 2px solid red;
+}
+
+#betOptions h3 {
+    margin: auto;
+    padding: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #gamePilesC {
+    margin-bottom: 20px;
+}
+.gameCards{
+    border: 0px solid white;
+    border-radius: 4px;
+}
+
+
+}
+
+
+/* ---------------------------------------
+            MOBILE STYLES
+--------------------------------------- */
+
+/*@media screen and (min-width: 0px) {
+    h1 {
+        color: chocolate;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    h1 {
+        color: red;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    h1 {
+        color: green;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        color: blue;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        color: yellow;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        color: fuchsia;
+    }
+}*/

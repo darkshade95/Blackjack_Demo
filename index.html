@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Blackjack</title>
+
+    <!-- Tell mobile phones not to lie about their true width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/myStyles.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/potStyles.css">-->
+
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body class="container-fluid">
+    <header id="header" class="container">
+        <div class="row">
+            <div class="col-lg-12 mx-auto">
+                <h1>Blackjack</h1>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+
+        <div id="introC">
+
+            <div class="row">
+                <div class="col-lg-12 mx-auto">
+                    <h2 id="potAmount"></h2>
+                    <h3>Select your betting amount below</h3>
+                </div>
+            </div>
+
+            <ul id="betOptions" class="row">
+                <li class="col-sm-4 mx-auto">
+                    <input type="radio" value="5" name="radio" id="bet5" />
+                    <label for="bet5"><h3>£5</h3></label>
+                </li>
+                <li class="col-sm-4 mx-auto">
+                    <input type="radio" value="10" name="radio" id="bet10" />
+                    <label for="bet10"><h3>£10</h3></label>
+                </li>
+                <li class="col-sm-4 mx-auto">
+                    <input type="radio" value="20" name="radio" id="bet20" />
+                    <label for="bet20"><h3>£20</h3></label>
+                </li>
+            </ul>
+            <!--<div class="row">
+                <div class="col-lg-12 mx-auto">
+                    <p>Welcome to this Blackjack demo. The aim of the game is to simply obtain a higher total card count than the Dealer, without going over 21.</p>
+                    <p>After the Player places a wager, the Player must hit (receive an additional card) to get their first card. From here, the Player must decide whether they want to hit again, or stand (the player does not want another card) and keep the cards they already have. The Player can hit as many times as they want, unless their card count is or goes over 21. Once the Player decides to stand, the Dealer will hit until their card count is higher than the Player, is or goes over 21.</p>
+                    <p>If the player has a higher card count than the Dealer, or the Dealer's card count goes over 21, they will earn the wagered amount, and vice versa for the Dealer. If any of the two have a card count of 21, they will receive double the wagered amount.</p>
+                    <p>Aces are valued as or eleven, picture cards Kings, Queens and Jacks have a card count of ten, and all cards are given their numeric face value, i.e. 7 is valued as 7 points, 2 is valued at 2 points, etc.</p>
+                </div>
+            </div>-->
+
+
+            <div class="row">
+                <div class="col-sm-12 mx-auto">
+                    <button id="buttonBeginGame">Begin Game</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="gameC">
+
+            <div id="resultMessageC" class="row">
+                <div class="col-lg-12 mx-auto">
+                    <h3 id="resultMessage">
+
+                    </h3>
+                </div>
+                <div class="col-lg-12 mx-auto">
+                    <button id="buttonRestart">Continue</button>
+                </div>
+            </div>
+
+            <div id="gamePilesC">
+
+
+                <div class="row">
+                    <div id="pileDealerC" class="col-lg-12">
+                        <h4 id="pileTotalDealer">Dealer's Total: </h4>
+
+                        <div id="pileCardsDealer" class="cardPlaceholder">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div id="pileUserC" class="col-lg-12">
+                        <h4 id="pileTotalUser">Your Total: </h4>
+
+                        <div id="pileCardsUser" class="cardPlaceholder">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="hitStandC" class="row">
+                <div class="col-xs-6">
+                    <button id="buttonHit">Hit</button>
+                </div>
+                <div class="col-xs-6">
+                    <button id="buttonStand">Stand</button>
+                    <!--<button id="buttonStandDisabled" disabled>Stand</button>-->
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <footer class="container">
+
+    </footer>
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    
+      <script>
+    AOS.init({
+      offset: 120,
+      duration: 400,
+      easing: 'ease',
+      delay: 0,
+      disable: 'mobile'
+    });
+  </script>
+
+    <script src="js/myScript.js"></script>
+    <!--<script src="js/potScript.js"></script>-->
+</body>
+
+</html>
